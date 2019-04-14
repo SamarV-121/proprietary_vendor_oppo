@@ -112,6 +112,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/framework/vendor.oppo.hardware.biometrics.fingerprint-V2.1-java.jar:system/framework/vendor.oppo.hardware.biometrics.fingerprint-V2.1-java.jar \
     vendor/oppo/RMX1801/proprietary/framework/vendor.oppo.hardware.biometrics.fingerprintpay-V1.0-java.jar:system/framework/vendor.oppo.hardware.biometrics.fingerprintpay-V1.0-java.jar \
     vendor/oppo/RMX1801/proprietary/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:system/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar \
+    vendor/oppo/RMX1801/proprietary/lib/android.frameworks.faceservice@1.0.so:system/lib/android.frameworks.faceservice@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib/android.frameworks.fingerprintservice@1.0.so:system/lib/android.frameworks.fingerprintservice@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib/android.hardware.biometrics.fingerprint@2.1.so:system/lib/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/oppo/RMX1801/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
@@ -177,6 +178,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/lib/sensors.hal.tof.so:system/lib/sensors.hal.tof.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
+    vendor/oppo/RMX1801/proprietary/lib/vendor.oppo.hardware.biometrics.face@1.0.so:system/lib/vendor.oppo.hardware.biometrics.face@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:system/lib/vendor.oppo.hardware.biometrics.fingerprint@2.1.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so:system/lib/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.oppo.hardware.ktv@1.0.so:system/lib/vendor.oppo.hardware.ktv@1.0.so \
