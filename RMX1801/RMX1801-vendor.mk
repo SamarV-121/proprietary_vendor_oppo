@@ -196,6 +196,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.tui_comm@1.0.so:system/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.vpp@1.1.so:system/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
+    vendor/oppo/RMX1801/proprietary/lib64/android.frameworks.faceservice@1.0.so:system/lib64/android.frameworks.faceservice@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/android.frameworks.fingerprintservice@1.0.so:system/lib64/android.frameworks.fingerprintservice@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:system/lib64/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/oppo/RMX1801/proprietary/lib64/android.hardware.tetheroffload.control@1.0.so:system/lib64/android.hardware.tetheroffload.control@1.0.so \
@@ -267,6 +268,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/lib64/sensors.hal.tof.so:system/lib64/sensors.hal.tof.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
+    vendor/oppo/RMX1801/proprietary/lib64/vendor.oppo.hardware.biometrics.face@1.0.so:system/lib64/vendor.oppo.hardware.biometrics.face@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:system/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so:system/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.oppo.hardware.ktv@1.0.so:system/lib64/vendor.oppo.hardware.ktv@1.0.so \
