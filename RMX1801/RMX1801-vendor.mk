@@ -17,7 +17,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/bin/dpmd:system/bin/dpmd \
-    vendor/oppo/RMX1801/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/oppo/RMX1801/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/oppo/RMX1801/proprietary/etc/camera/Charming.cng:system/etc/camera/Charming.cng \
     vendor/oppo/RMX1801/proprietary/etc/camera/VfbTuningInterface.xml:system/etc/camera/VfbTuningInterface.xml \
@@ -49,11 +48,9 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/oppo/RMX1801/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
-    vendor/oppo/RMX1801/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
-    vendor/oppo/RMX1801/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
@@ -102,11 +99,9 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/oppo/RMX1801/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/oppo/RMX1801/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/oppo/RMX1801/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/oppo/RMX1801/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/oppo/RMX1801/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/oppo/RMX1801/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
-    vendor/oppo/RMX1801/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/oppo/RMX1801/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/oppo/RMX1801/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/oppo/RMX1801/proprietary/framework/vendor.oppo.hardware.biometrics.fingerprint-V2.1-java.jar:system/framework/vendor.oppo.hardware.biometrics.fingerprint-V2.1-java.jar \
@@ -123,43 +118,23 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
     vendor/oppo/RMX1801/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
     vendor/oppo/RMX1801/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
-    vendor/oppo/RMX1801/proprietary/lib/libGPTEE_system.so:system/lib/libGPTEE_system.so \
-    vendor/oppo/RMX1801/proprietary/lib/libQTEEConnector_system.so:system/lib/libQTEEConnector_system.so \
     vendor/oppo/RMX1801/proprietary/lib/libandroid_net.so:system/lib/libandroid_net.so \
     vendor/oppo/RMX1801/proprietary/lib/libaudioroute.so:system/lib/libaudioroute.so \
-    vendor/oppo/RMX1801/proprietary/lib/libcritical_log_service.so:system/lib/libcritical_log_service.so \
-    vendor/oppo/RMX1801/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/oppo/RMX1801/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
     vendor/oppo/RMX1801/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
     vendor/oppo/RMX1801/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
     vendor/oppo/RMX1801/proprietary/lib/libdpmnsrm.so:system/lib/libdpmnsrm.so \
     vendor/oppo/RMX1801/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
-    vendor/oppo/RMX1801/proprietary/lib/libhbtpjni.so:system/lib/libhbtpjni.so \
     vendor/oppo/RMX1801/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/oppo/RMX1801/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
-    vendor/oppo/RMX1801/proprietary/lib/libldacBT_abr.so:system/lib/libldacBT_abr.so \
-    vendor/oppo/RMX1801/proprietary/lib/libldacBT_enc.so:system/lib/libldacBT_enc.so \
-    vendor/oppo/RMX1801/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/oppo/RMX1801/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/oppo/RMX1801/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
     vendor/oppo/RMX1801/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/oppo/RMX1801/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/oppo/RMX1801/proprietary/lib/libqdMetaData.system.so:system/lib/libqdMetaData.system.so \
-    vendor/oppo/RMX1801/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
-    vendor/oppo/RMX1801/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
-    vendor/oppo/RMX1801/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
-    vendor/oppo/RMX1801/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/oppo/RMX1801/proprietary/lib/librcc.so:system/lib/librcc.so \
-    vendor/oppo/RMX1801/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
-    vendor/oppo/RMX1801/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
-    vendor/oppo/RMX1801/proprietary/lib/libsensor_test.so:system/lib/libsensor_test.so \
     vendor/oppo/RMX1801/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
     vendor/oppo/RMX1801/proprietary/lib/libvendorconn.so:system/lib/libvendorconn.so \
-    vendor/oppo/RMX1801/proprietary/lib/libvr_amb_engine.so:system/lib/libvr_amb_engine.so \
-    vendor/oppo/RMX1801/proprietary/lib/libvr_object_engine.so:system/lib/libvr_object_engine.so \
-    vendor/oppo/RMX1801/proprietary/lib/libvr_sam_wrapper.so:system/lib/libvr_sam_wrapper.so \
-    vendor/oppo/RMX1801/proprietary/lib/libvraudio.so:system/lib/libvraudio.so \
-    vendor/oppo/RMX1801/proprietary/lib/libvraudio_client.so:system/lib/libvraudio_client.so \
     vendor/oppo/RMX1801/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
     vendor/oppo/RMX1801/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
     vendor/oppo/RMX1801/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
@@ -176,27 +151,11 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
     vendor/oppo/RMX1801/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
     vendor/oppo/RMX1801/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
-    vendor/oppo/RMX1801/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
-    vendor/oppo/RMX1801/proprietary/lib/sensors.hal.tof.so:system/lib/sensors.hal.tof.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:system/lib/vendor.oppo.hardware.biometrics.fingerprint@2.1.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so:system/lib/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.oppo.hardware.ktv@1.0.so:system/lib/vendor.oppo.hardware.ktv@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.esepowermanager@1.0.so:system/lib/vendor.qti.esepowermanager@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.gnss@1.0.so:system/lib/vendor.qti.gnss@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.factory@1.0.so:system/lib/vendor.qti.hardware.factory@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0.so:system/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so:system/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:system/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.iop@1.0.so:system/lib/vendor.qti.hardware.iop@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.iop@2.0.so:system/lib/vendor.qti.hardware.iop@2.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.tui_comm@1.0.so:system/lib/vendor.qti.hardware.tui_comm@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.vpp@1.1.so:system/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/android.frameworks.fingerprintservice@1.0.so:system/lib64/android.frameworks.fingerprintservice@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:system/lib64/android.hardware.biometrics.fingerprint@2.1.so \
@@ -215,44 +174,23 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
     vendor/oppo/RMX1801/proprietary/lib64/libExtendedExtractor.so:system/lib64/libExtendedExtractor.so \
     vendor/oppo/RMX1801/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libGPTEE_system.so:system/lib64/libGPTEE_system.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
     vendor/oppo/RMX1801/proprietary/lib64/libandroid_net.so:system/lib64/libandroid_net.so \
     vendor/oppo/RMX1801/proprietary/lib64/libaudioroute.so:system/lib64/libaudioroute.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libcritical_log_service.so:system/lib64/libcritical_log_service.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/oppo/RMX1801/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
     vendor/oppo/RMX1801/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
     vendor/oppo/RMX1801/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
     vendor/oppo/RMX1801/proprietary/lib64/libdpmnsrm.so:system/lib64/libdpmnsrm.so \
     vendor/oppo/RMX1801/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libhbtpjni.so:system/lib64/libhbtpjni.so \
     vendor/oppo/RMX1801/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/oppo/RMX1801/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libldacBT_abr.so:system/lib64/libldacBT_abr.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libldacBT_enc.so:system/lib64/libldacBT_enc.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/oppo/RMX1801/proprietary/lib64/libmmparser.so:system/lib64/libmmparser.so \
     vendor/oppo/RMX1801/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/oppo/RMX1801/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/oppo/RMX1801/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
     vendor/oppo/RMX1801/proprietary/lib64/libqdMetaData.system.so:system/lib64/libqdMetaData.system.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/oppo/RMX1801/proprietary/lib64/librcc.so:system/lib64/librcc.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libsensor_test.so:system/lib64/libsensor_test.so \
     vendor/oppo/RMX1801/proprietary/lib64/libtinyalsa.so:system/lib64/libtinyalsa.so \
     vendor/oppo/RMX1801/proprietary/lib64/libvendorconn.so:system/lib64/libvendorconn.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libvr_amb_engine.so:system/lib64/libvr_amb_engine.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libvr_object_engine.so:system/lib64/libvr_object_engine.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libvr_sam_wrapper.so:system/lib64/libvr_sam_wrapper.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libvraudio.so:system/lib64/libvraudio.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libvraudio_client.so:system/lib64/libvraudio_client.so \
     vendor/oppo/RMX1801/proprietary/lib64/libwfdavenhancements.so:system/lib64/libwfdavenhancements.so \
     vendor/oppo/RMX1801/proprietary/lib64/libwfdcodecv4l2.so:system/lib64/libwfdcodecv4l2.so \
     vendor/oppo/RMX1801/proprietary/lib64/libwfdcommonutils.so:system/lib64/libwfdcommonutils.so \
@@ -269,32 +207,14 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/lib64/libwfduibcsinkinterface.so:system/lib64/libwfduibcsinkinterface.so \
     vendor/oppo/RMX1801/proprietary/lib64/libwfduibcsrc.so:system/lib64/libwfduibcsrc.so \
     vendor/oppo/RMX1801/proprietary/lib64/libwfduibcsrcinterface.so:system/lib64/libwfduibcsrcinterface.so \
-    vendor/oppo/RMX1801/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
-    vendor/oppo/RMX1801/proprietary/lib64/sensors.hal.tof.so:system/lib64/sensors.hal.tof.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:system/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so:system/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.oppo.hardware.ktv@1.0.so:system/lib64/vendor.oppo.hardware.ktv@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.esepowermanager@1.0.so:system/lib64/vendor.qti.esepowermanager@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.factory@1.0.so:system/lib64/vendor.qti.hardware.factory@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/lib64/vendor.qti.hardware.iop@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.iop@2.0.so:system/lib64/vendor.qti.hardware.iop@2.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.tui_comm@1.0.so:system/lib64/vendor.qti.hardware.tui_comm@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.vpp@1.1.so:system/lib64/vendor.qti.hardware.vpp@1.1.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.wifi.keystore@1.0.so:system/lib64/vendor.qti.hardware.wifi.keystore@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so
 
 PRODUCT_PACKAGES += \
-    QtiSystemService \
     QtiTelephonyService \
     WfdService \
     datastatusnotification \
