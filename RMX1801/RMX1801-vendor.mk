@@ -1,5 +1,4 @@
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2019 The LineageOS Project
+# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,6 +16,16 @@
 
 PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/oppo/RMX1801/proprietary/bin/wfdservice:system/bin/wfdservice \
+    vendor/oppo/RMX1801/proprietary/etc/camera/ashdr/ncf_pack.ncf:system/etc/camera/ashdr/ncf_pack.ncf \
+    vendor/oppo/RMX1801/proprietary/etc/camera/cp/CPCalibrationData.bin:system/etc/camera/cp/CPCalibrationData.bin \
+    vendor/oppo/RMX1801/proprietary/etc/camera/cp/FusionCalibrationParams.bin:system/etc/camera/cp/FusionCalibrationParams.bin \
+    vendor/oppo/RMX1801/proprietary/etc/camera/cp/SystemParamsBokeh.bin:system/etc/camera/cp/SystemParamsBokeh.bin \
+    vendor/oppo/RMX1801/proprietary/etc/camera/cp/SystemParamsFusion.bin:system/etc/camera/cp/SystemParamsFusion.bin \
+    vendor/oppo/RMX1801/proprietary/etc/camera/faceTpl0.rgb32:system/etc/camera/faceTpl0.rgb32 \
+    vendor/oppo/RMX1801/proprietary/etc/camera/faceTpl1.rgb32:system/etc/camera/faceTpl1.rgb32 \
+    vendor/oppo/RMX1801/proprietary/etc/camera/gasryuv.model:system/etc/camera/gasryuv.model \
+    vendor/oppo/RMX1801/proprietary/etc/camera/skinSeg.model:system/etc/camera/skinSeg.model \
     vendor/oppo/RMX1801/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/oppo/RMX1801/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
     vendor/oppo/RMX1801/proprietary/etc/firmware/cpp_firmware_v1_12_0.fw:system/etc/firmware/cpp_firmware_v1_12_0.fw \
@@ -30,6 +39,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/oppo/RMX1801/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
     vendor/oppo/RMX1801/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
+    vendor/oppo/RMX1801/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/oppo/RMX1801/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:system/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
@@ -42,6 +52,45 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/GyroOffset_db.config:system/etc/vstab_configs/GyroOffset_db.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/fsync_db.config:system/etc/vstab_configs/fsync_db.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_preview.config:system/etc/vstab_configs/vstab_db_1080p_preview.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_preview_0_imx519_bmi.config:system/etc/vstab_configs/vstab_db_1080p_preview_0_imx519_bmi.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_preview_0_imx519_lsm.config:system/etc/vstab_configs/vstab_db_1080p_preview_0_imx519_lsm.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_video_0.config:system/etc/vstab_configs/vstab_db_1080p_video_0.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_video_0_imx519_bmi.config:system/etc/vstab_configs/vstab_db_1080p_video_0_imx519_bmi.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_video_0_imx519_lsm.config:system/etc/vstab_configs/vstab_db_1080p_video_0_imx519_lsm.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq.config:system/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq_sfov.config:system/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq_sfov.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq_sfov_bmi.config:system/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq_sfov_bmi.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq_sfov_main.config:system/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq_sfov_main.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_video_0_sfov.config:system/etc/vstab_configs/vstab_db_1080p_video_0_sfov.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_video_0_sfov_lsm.config:system/etc/vstab_configs/vstab_db_1080p_video_0_sfov_lsm.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_video_0_sfov_main.config:system/etc/vstab_configs/vstab_db_1080p_video_0_sfov_main.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1080p_video_1.config:system/etc/vstab_configs/vstab_db_1080p_video_1.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1350p_video_0.config:system/etc/vstab_configs/vstab_db_1350p_video_0.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_1350p_video_0_s5k2p7sq.config:system/etc/vstab_configs/vstab_db_1350p_video_0_s5k2p7sq.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_4k_preview.config:system/etc/vstab_configs/vstab_db_4k_preview.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_4k_video_0.config:system/etc/vstab_configs/vstab_db_4k_video_0.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_4k_video_1.config:system/etc/vstab_configs/vstab_db_4k_video_1.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_preview.config:system/etc/vstab_configs/vstab_db_720p_preview.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_preview_0_imx519_bmi.config:system/etc/vstab_configs/vstab_db_720p_preview_0_imx519_bmi.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_preview_0_imx519_lsm.config:system/etc/vstab_configs/vstab_db_720p_preview_0_imx519_lsm.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_video_0.config:system/etc/vstab_configs/vstab_db_720p_video_0.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_video_0_imx519_bmi.config:system/etc/vstab_configs/vstab_db_720p_video_0_imx519_bmi.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_video_0_imx519_lsm.config:system/etc/vstab_configs/vstab_db_720p_video_0_imx519_lsm.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq.config:system/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq_sfov.config:system/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq_sfov.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq_sfov_bmi.config:system/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq_sfov_bmi.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq_sfov_main.config:system/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq_sfov_main.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_video_0_sfov.config:system/etc/vstab_configs/vstab_db_720p_video_0_sfov.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_video_0_sfov_lsm.config:system/etc/vstab_configs/vstab_db_720p_video_0_sfov_lsm.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_video_0_sfov_main.config:system/etc/vstab_configs/vstab_db_720p_video_0_sfov_main.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_720p_video_1.config:system/etc/vstab_configs/vstab_db_720p_video_1.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_900p_video_0.config:system/etc/vstab_configs/vstab_db_900p_video_0.config \
+    vendor/oppo/RMX1801/proprietary/etc/vstab_configs/vstab_db_900p_video_0_s5k2p7sq.config:system/etc/vstab_configs/vstab_db_900p_video_0_s5k2p7sq.config \
+    vendor/oppo/RMX1801/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
+    vendor/oppo/RMX1801/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/oppo/RMX1801/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/oppo/RMX1801/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/oppo/RMX1801/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
@@ -69,6 +118,33 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:system/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar \
     vendor/oppo/RMX1801/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
     vendor/oppo/RMX1801/proprietary/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:system/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
+    vendor/oppo/RMX1801/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/oppo/RMX1801/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
+    vendor/oppo/RMX1801/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+    vendor/oppo/RMX1801/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+    vendor/oppo/RMX1801/proprietary/lib/libdisplayconfig.so:system/lib/libdisplayconfig.so \
+    vendor/oppo/RMX1801/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/oppo/RMX1801/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+    vendor/oppo/RMX1801/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
+    vendor/oppo/RMX1801/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
+    vendor/oppo/RMX1801/proprietary/lib/libqdMetaData.system.so:system/lib/libqdMetaData.system.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfdnative.so:system/lib/libwfdnative.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
+    vendor/oppo/RMX1801/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:system/lib/vendor.oppo.hardware.biometrics.fingerprint@2.1.so \
     vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.fingerprint@1.0.so:system/lib/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
@@ -83,7 +159,10 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
     vendor/oppo/RMX1801/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/oppo/RMX1801/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
+    vendor/oppo/RMX1801/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/oppo/RMX1801/proprietary/lib64/librcc.so:system/lib64/librcc.so \
+    vendor/oppo/RMX1801/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
+    vendor/oppo/RMX1801/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:system/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.fingerprint@1.0.so:system/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so
@@ -94,6 +173,8 @@ PRODUCT_PACKAGES += \
     embms \
     imssettings \
     CNEService \
+    WfdService \
     dpmserviceapp \
     ims \
-    qcrilmsgtunnel
+    qcrilmsgtunnel \
+    WfdCommon
