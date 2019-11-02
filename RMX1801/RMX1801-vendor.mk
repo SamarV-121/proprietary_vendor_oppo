@@ -17,15 +17,6 @@
 PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/oppo/RMX1801/proprietary/bin/wfdservice:system/bin/wfdservice \
-    vendor/oppo/RMX1801/proprietary/etc/camera/ashdr/ncf_pack.ncf:system/etc/camera/ashdr/ncf_pack.ncf \
-    vendor/oppo/RMX1801/proprietary/etc/camera/cp/CPCalibrationData.bin:system/etc/camera/cp/CPCalibrationData.bin \
-    vendor/oppo/RMX1801/proprietary/etc/camera/cp/FusionCalibrationParams.bin:system/etc/camera/cp/FusionCalibrationParams.bin \
-    vendor/oppo/RMX1801/proprietary/etc/camera/cp/SystemParamsBokeh.bin:system/etc/camera/cp/SystemParamsBokeh.bin \
-    vendor/oppo/RMX1801/proprietary/etc/camera/cp/SystemParamsFusion.bin:system/etc/camera/cp/SystemParamsFusion.bin \
-    vendor/oppo/RMX1801/proprietary/etc/camera/faceTpl0.rgb32:system/etc/camera/faceTpl0.rgb32 \
-    vendor/oppo/RMX1801/proprietary/etc/camera/faceTpl1.rgb32:system/etc/camera/faceTpl1.rgb32 \
-    vendor/oppo/RMX1801/proprietary/etc/camera/gasryuv.model:system/etc/camera/gasryuv.model \
-    vendor/oppo/RMX1801/proprietary/etc/camera/skinSeg.model:system/etc/camera/skinSeg.model \
     vendor/oppo/RMX1801/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/oppo/RMX1801/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
     vendor/oppo/RMX1801/proprietary/etc/firmware/cpp_firmware_v1_12_0.fw:system/etc/firmware/cpp_firmware_v1_12_0.fw \
@@ -42,12 +33,8 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/oppo/RMX1801/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
-    vendor/oppo/RMX1801/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:system/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
-    vendor/oppo/RMX1801/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:system/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
-    vendor/oppo/RMX1801/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:system/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
-    vendor/oppo/RMX1801/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/oppo/RMX1801/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
@@ -94,9 +81,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/oppo/RMX1801/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/oppo/RMX1801/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/oppo/RMX1801/proprietary/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
-    vendor/oppo/RMX1801/proprietary/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
-    vendor/oppo/RMX1801/proprietary/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:system/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
     vendor/oppo/RMX1801/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/oppo/RMX1801/proprietary/framework/com.quicinc.cne.api-V1.1-java.jar:system/framework/com.quicinc.cne.api-V1.1-java.jar \
     vendor/oppo/RMX1801/proprietary/framework/com.quicinc.cne.constants-V1.0-java.jar:system/framework/com.quicinc.cne.constants-V1.0-java.jar \
@@ -108,17 +92,13 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/framework/com.quicinc.cne.server-V2.1-java.jar:system/framework/com.quicinc.cne.server-V2.1-java.jar \
     vendor/oppo/RMX1801/proprietary/framework/com.quicinc.cne.server-V2.2-java.jar:system/framework/com.quicinc.cne.server-V2.2-java.jar \
     vendor/oppo/RMX1801/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
-    vendor/oppo/RMX1801/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/oppo/RMX1801/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/oppo/RMX1801/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/oppo/RMX1801/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
-    vendor/oppo/RMX1801/proprietary/framework/vendor.oppo.hardware.biometrics.fingerprint-V2.1-java.jar:system/framework/vendor.oppo.hardware.biometrics.fingerprint-V2.1-java.jar \
-    vendor/oppo/RMX1801/proprietary/framework/vendor.qti.data.factory-V1.0-java.jar:system/framework/vendor.qti.data.factory-V1.0-java.jar \
+    vendor/oppo/RMX1801/proprietary/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:system/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
     vendor/oppo/RMX1801/proprietary/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:system/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
-    vendor/oppo/RMX1801/proprietary/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:system/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar \
-    vendor/oppo/RMX1801/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
-    vendor/oppo/RMX1801/proprietary/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:system/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
     vendor/oppo/RMX1801/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/oppo/RMX1801/proprietary/lib/com.quicinc.cne.server@1.0.so:system/lib/com.quicinc.cne.server@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
     vendor/oppo/RMX1801/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/oppo/RMX1801/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
@@ -145,9 +125,9 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
     vendor/oppo/RMX1801/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
     vendor/oppo/RMX1801/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:system/lib/vendor.oppo.hardware.biometrics.fingerprint@2.1.so \
-    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.fingerprint@1.0.so:system/lib/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/oppo/RMX1801/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/oppo/RMX1801/proprietary/lib64/com.quicinc.cne.server@1.0.so:system/lib64/com.quicinc.cne.server@1.0.so \
     vendor/oppo/RMX1801/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/oppo/RMX1801/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/oppo/RMX1801/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
@@ -163,15 +143,13 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/RMX1801/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/oppo/RMX1801/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
     vendor/oppo/RMX1801/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:system/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.fingerprint@1.0.so:system/lib64/vendor.qti.hardware.fingerprint@1.0.so \
-    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so
+    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
+    vendor/oppo/RMX1801/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
+    vendor/oppo/RMX1801/proprietary/lib/soundfx/libvolumelistener.so:system/lib/soundfx/libvolumelistener.so \
+    vendor/oppo/RMX1801/proprietary/lib64/soundfx/libvolumelistener.so:system/lib64/soundfx/libvolumelistener.so
 
 PRODUCT_PACKAGES += \
     QtiTelephonyService \
-    datastatusnotification \
-    embms \
-    imssettings \
     CNEService \
     WfdService \
     dpmserviceapp \
